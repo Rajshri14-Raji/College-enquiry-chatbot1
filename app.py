@@ -64,6 +64,10 @@ intents = {
         "keywords": ["hostel", "accommodation", "stay", "residence"],
         "response": "We have separate hostels for boys and girls with all necessary facilities." 
     },
+    "saturday": {
+        "keywords": ["saturday","sunday", "weekend", "holiday"],
+        "response": "Our college remains closed on 2nd Saturdays and Sundays."
+    },
 
 }
 
@@ -136,6 +140,7 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     app.run(debug=True)
+
 
 
 
