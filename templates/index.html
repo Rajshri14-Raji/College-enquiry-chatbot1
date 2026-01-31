@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Enquiry Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="top-header">
+    <div class="header-left">
+        🎓 <span>College Enquiry Chatbot</span>
+    </div>
+    <!-- <div class="header-right">
+        <a href="#">Admin Login</a>
+        <a href="#">Help</a>
+    </div> -->
+</header>
+
+<div class="hero">
+    <img src="{{ url_for('static', filename='good-colleges.jpg') }}" alt="College Banner">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="container">
+
+            <!-- LEFT CONTENT -->
+            <div class="left">
+                <h2>Welcome to ABC College</h2>
+                <p>How can I assist you today?</p>
+
+                <div class="buttons">
+                    <button onclick="sendQuick('admission')">🎓 Admission Process</button>
+                    <button onclick="sendQuick('courses')">📘 Courses Offered</button>
+                    <button onclick="sendQuick('fees')">₹ Fees Structure</button>
+                    <button onclick="sendQuick('contact')">📞 Contact Info</button>
+                </div>
+            </div>
+
+            <!-- CHATBOT -->
+            <div class="chatbox">
+                <div class="chatbox-header">🤖Ask your chatbot</div>
+
+                <div id="chat-area"></div>
+
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Type your question...">
+                    <button onclick="sendMessage()">📤</button>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+<!-- INFO SECTION (HIDDEN BY DEFAULT) -->
+<div id="info-section" class="info-section" style="display:none;">
+
+    <div id="about" class="info-content">
+        <h2>About Us</h2>
+        <p>
+            ABC College was established in 2005 and is affiliated to XYZ University.
+            We focus on academic excellence, innovation, and student development.
+        </p>
+    </div>
+
+    <div id="faqs" class="info-content">
+        <h2>FAQs</h2>
+        <p><strong>Q:</strong> How can I apply for admission?</p>
+        <p><strong>A:</strong> You can apply online by filling the admission form.</p>
+
+        <p><strong>Q:</strong> What courses are offered?</p>
+        <p><strong>A:</strong> BCA, BBA, B.Sc, MCA and MBA.</p>
+
+        <p><strong>Q:</strong> Is hostel facility available?</p>
+        <p><strong>A:</strong> Yes, hostel facilities are available.</p>
+    </div>
+
+    <div id="contact" class="info-content">
+        <h2>Contact Us</h2>
+        <p>📍 Address: Andheri East, Mumbai</p>
+        <p>📞 Phone: +91-9876543210</p>
+        <p>✉ Email: abc@college.edu</p>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer-links">
+        <a href="#about" onclick="showSection('about')">About Us</a>
+<span>|</span>
+<a href="#faqs" onclick="showSection('faqs')">FAQs</a>
+<span>|</span>
+<a href="#contact" onclick="showSection('contact')">Contact Us</a>
+
+    </div>
+    <div class="footer-copy">
+        © 2025 ABC College. All rights reserved.
+    </div>
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
