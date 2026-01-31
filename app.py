@@ -13,7 +13,7 @@ intents = {
     },
     "fees": {
         "keywords": ["fee", "tuition", "cost", "price"],
-        "response": "The fee structure varies by course. For example, BCA starts from ₹45,000 per year."
+        "response": "The fee structure varies by course. For example, BCA starts from ₹45,000 per year, BBA starts from ₹35,000, B.Sc starts from ₹60,000 per year, MCA starts from ₹1,10,000 per year and MBA starts from ₹90,000 per year."
     },
     "contact": {
         "keywords": ["contact", "phone", "email", "reach"],
@@ -136,5 +136,6 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     app.run(debug=True)
+
 
 
