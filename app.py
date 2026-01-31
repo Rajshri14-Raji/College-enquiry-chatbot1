@@ -56,7 +56,14 @@ intents = {
         "keywords": ["bye", "goodbye", "see you", "farewell"],
         "response": "Goodbye! Have a great day!"
     },
-
+     "hospitality": {
+        "keywords": ["food", "canteen", "mess", "dining"],
+        "response": "Our college provides a variety of food options in the canteen, including vegetarian and non-vegetarian meals."
+    },
+    "hostel": {
+        "keywords": ["hostel", "accommodation", "stay", "residence"],
+        "response": "We have separate hostels for boys and girls with all necessary facilities." 
+    },
 
 }
 
@@ -129,3 +136,4 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     app.run(debug=True)
+
