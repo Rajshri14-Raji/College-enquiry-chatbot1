@@ -70,7 +70,7 @@ intents = {
 responses = {
     "courses": "We offer BCA, BBA, B.Sc, MCA and MBA courses.",
     "admission": "Admissions are based on merit. Fill the online form and submit documents.",
-    "fees": "Fee structure varies by course. BCA starts from ₹45,000 per year.",
+    "fees": "Fee structure varies by course. BCA starts from ₹45,000 per year, BBA starts from ₹35,000, B.Sc starts from ₹60,000 per year, MCA starts from ₹1,10,000 per year and MBA starts from ₹90,000 per year.",
     "contact": "You can contact us at +91-9876543210 or email abc@college.edu",
     "default": "Sorry, I didn't understand. Please ask about admission, courses, fees or contact."
 }
@@ -136,4 +136,5 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     app.run(debug=True)
+
 
