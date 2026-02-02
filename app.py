@@ -1,5 +1,6 @@
+# Import required libraries
 from flask import Flask, render_template, request, jsonify
-
+# Create Flask app
 app = Flask(__name__)
 
 intents = {
@@ -82,7 +83,7 @@ responses = {
 @app.route("/")
 def index():
     return render_template("index.html")
-
+# Route for chatbot response
 @app.route("/chat", methods=["POST"])
 def chat():
     import re
@@ -105,42 +106,6 @@ def chat():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-
-
-    # if "course" in user_msg:
-    #     reply = responses["courses"]
-    # elif "admission" in user_msg:
-    #     reply = responses["admission"]
-    # elif "fee" in user_msg:
-    #     reply = responses["fees"]
-    # elif "contact" in user_msg:
-    #     reply = responses["contact"]
-    # elif "hello" in user_msg or "hi" in user_msg:
-    #     reply = "Hello! How can I assist you today?"
-    # elif "thank you" in user_msg or "thanks" in user_msg:
-    #     reply = "You're welcome! If you have any more questions, feel free to ask."
-    # elif "help" in user_msg:
-    #     reply = "Sure! You can ask me about courses, admission, fees, or contact information."
-    # elif "who are you" in user_msg or "what are you" in user_msg:
-    #     reply = "I am a virtual assistant here to help you with information about our college."
-    # elif "hours" in user_msg or "open" in user_msg:
-    #     reply = "Our college is open from 9 AM to 5 PM, Monday to Friday."
-    # elif "location" in user_msg or "where" in user_msg:
-    #     reply = "We are located at 123 College Street, City, Country."
-    # elif "events" in user_msg or "activities" in user_msg:
-    #     reply = "We host various events throughout the year including cultural fests, sports meets, and seminars."
-    # elif "scholarships" in user_msg or "financial aid" in user_msg:
-    #     reply = "We offer several scholarships based on merit and need. Please visit our scholarships page for more details."
-    # elif "bye" in user_msg or "goodbye" in user_msg:
-    #     reply = "Goodbye! Have a great day!"                                                                                                       
-#     else:
-#         reply = responses["default"]
-
-#     return jsonify({"reply": reply})
-
-# if __name__ == "__main__":
-#     app.run(debug=True)
-
 
 
 
